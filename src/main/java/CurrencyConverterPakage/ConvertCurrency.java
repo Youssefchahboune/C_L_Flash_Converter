@@ -1,4 +1,4 @@
-package com.example.c_l_flash_converter;
+package CurrencyConverterPakage;
 
 public interface ConvertCurrency {
     public double convert(Currency currency);

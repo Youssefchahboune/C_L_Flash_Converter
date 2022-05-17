@@ -1,19 +1,21 @@
-package com.example.c_l_flash_converter;
+package CurrencyConverterPakage;
+
+import CurrencyConverterPakage.Currency;
 
 import java.util.Hashtable;
 
-public class EURO extends Currency{
-    private String currencyName = "EURO";
+public class YEN extends Currency {
+    private String currencyName = "YEN";
 
     private Hashtable<String,Double> rates;
 
-    public EURO(double a){
+    public YEN(double a){
         super(a);
         rates  = new Hashtable<>();
-        rates.put("CAD",1.36);
-        rates.put("USD",1.05);
-        rates.put("YEN",136.92);
-        rates.put("EURO",1.0);
+        rates.put("CAD",0.0099);
+        rates.put("USD",0.0077);
+        rates.put("YEN",1.0);
+        rates.put("EURO",0.0073);
     }
 
     @Override

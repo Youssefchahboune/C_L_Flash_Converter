@@ -1,8 +1,10 @@
-package com.example.c_l_flash_converter;
+package CurrencyConverterPakage;
+
+import CurrencyConverterPakage.Currency;
 
 import java.util.Hashtable;
 
-public class USD extends Currency{
+public class USD extends Currency {
 
     private String currencyName = "USD";
 

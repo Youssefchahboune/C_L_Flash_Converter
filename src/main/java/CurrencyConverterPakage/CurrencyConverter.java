@@ -1,4 +1,4 @@
-package com.example.c_l_flash_converter;
+package CurrencyConverterPakage;
 
 public class CurrencyConverter {
 

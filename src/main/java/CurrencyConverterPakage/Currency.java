@@ -1,6 +1,8 @@
-package com.example.c_l_flash_converter;
+package CurrencyConverterPakage;
 
-public abstract class Currency implements ConvertCurrency{
+import CurrencyConverterPakage.ConvertCurrency;
+
+public abstract class Currency implements ConvertCurrency {
 
     private double amount;
 
