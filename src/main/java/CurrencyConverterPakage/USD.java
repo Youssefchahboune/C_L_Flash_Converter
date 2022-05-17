@@ -26,6 +26,6 @@ public class USD extends Currency {
 
     @Override
     public double convert(Currency currency) {
-        return getAmount()*rates.get(currency.getCurrencyName());
+        return Math.round((getAmount()*rates.get(currency.getCurrencyName()))*100.0)/100.0;
     }
 }
