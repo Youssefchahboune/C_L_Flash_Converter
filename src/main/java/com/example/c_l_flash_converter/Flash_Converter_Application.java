@@ -164,10 +164,14 @@ public class Flash_Converter_Application extends Application {
         stage.show();
     }
 
+
     class convertButton implements EventHandler<ActionEvent> {
+
+        // method that convert the amount entered
         @Override
         public void handle(ActionEvent event) {
 
+            // if the comboboxes and the input is empty show error dialog
             if (currencyTopTextField.getText().isEmpty() || currencyTopComboBox.getSelectionModel().isEmpty() || currencyBottomComboBox.getSelectionModel().isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Error Dialog");
@@ -175,6 +179,7 @@ public class Flash_Converter_Application extends Application {
                 alert.setContentText("One of the fields is empty, make sure that you selected the currency and that you entered an amount to be converted !");
                 alert.showAndWait();
             }
+            // if the input is not a number show error dialog
             else if (!(currencyTopTextField.getText().matches("[0-9]+"))){
                 currencyTopTextField.clear();
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -183,6 +188,7 @@ public class Flash_Converter_Application extends Application {
                 alert.setContentText("The input that you entered is not a number, please enter a number !");
                 alert.showAndWait();
             }
+            // if the input is a negative number show error dialog
             else if (Double.parseDouble(currencyTopTextField.getText()) < 0){
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Error Dialog");
@@ -190,6 +196,7 @@ public class Flash_Converter_Application extends Application {
                 alert.setContentText("The amount you entered is lower than zero, please enter a number equal or above zero !");
                 alert.showAndWait();
             }
+            // else convert the input to new currency desired and show result to bottom text field
             else {
                 double input = Double.parseDouble(currencyTopTextField.getText());
                 String country1 = currencyTopComboBox.getValue();
