@@ -1,0 +1,66 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #64E8DE, #8A64EB);
+}
+
+#app-title {
+    -fx-font-size : 50px ;
+    -fx-text-fill : white;
+}
+
+#currency-title {
+    -fx-font-size : 25px ;
+    -fx-text-fill : white;
+}
+
+#currency-Top-TextField {
+    -fx-background-color: rgba(0, 255, 0, 0) ;
+    -fx-text-fill: white;
+    -fx-border-color: transparent transparent white transparent;
+    -fx-font-size : 25px ;
+}
+
+#currency-Top-ComboBox {
+    -fx-background-color: rgba(255, 255, 255, 0.7) ;
+}
+
+#currency-bottom-TextField {
+    -fx-background-color: rgba(0, 255, 0, 0) ;
+    -fx-text-fill: #003fff;
+    -fx-border-color: transparent transparent #003fff transparent;
+    -fx-font-size : 25px ;
+}
+
+#currency-Bottom-ComboBox {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+#top-currency-converter {
+    -fx-background-color: linear-gradient(to bottom, #003fff, #7899ff);
+    /*-fx-background-color: #003fff;*/
+    -fx-border-radius: 9 9 0 0 ;
+    -fx-background-radius: 9 9 0 0;
+}
+
+.gray-button {
+    -fx-background-color: linear-gradient(to bottom, gray, #b4b4b4);
+    -fx-text-fill : white;
+    -fx-font-size : 13px ;
+    -fx-background-radius : 30px;
+}
+
+.blue-button {
+    -fx-background-color: linear-gradient(to bottom, #003fff, #7899ff);
+    -fx-text-fill : white;
+    -fx-font-size : 13px ;
+    -fx-background-radius : 30px;
+}
+
+
+#bottom-currency-converter {
+    -fx-background-color: white;
+    -fx-border-radius: 0 0 9 9 ;
+    -fx-background-radius: 0 0 9 9;
+}
+
+
+
