@@ -3,7 +3,7 @@ package CurrencyConverterPakage;
 import java.util.Hashtable;
 
 /*
-    This class is called USD and extends from Currency. Also, this class will handle the conversion from
+    This class is called YEN and extends from Currency. Also, this class will handle the conversion from
     YEN to other currencies (USD,CAD,EURO).
 */
 

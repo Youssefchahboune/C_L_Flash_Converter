@@ -10,7 +10,7 @@ package CurrencyConverterPakage;
 
 public abstract class Currency implements ConvertCurrency {
 
-    // field called amount
+    // field called amount of type double
     private double amount;
 
     // Currency constructor that takes a double parameter / amount
