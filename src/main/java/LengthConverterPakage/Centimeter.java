@@ -22,7 +22,7 @@ public class Centimeter extends Length{
     public Centimeter(double m){
         super(m);
         rates = new Hashtable<>();
-        rates.put("KM",0.000001);
+        rates.put("KM",0.00001);
         rates.put("M",0.01);
         rates.put("CM",1.0);
         rates.put("MM",10.0);
@@ -36,10 +36,9 @@ public class Centimeter extends Length{
 
     /*
        Overridden method from ConvertLength interface that takes a Length object and converts CM to that unit object.
-       Returns a rounded number that has two decimal palaces.
      */
     @Override
     public double convert(Length unit) {
-        return Math.round((getMeasurement()*rates.get(unit.getLengthUnit()))*100.0)/100.0;
+        return getMeasurement()*rates.get(unit.getLengthUnit());
     }
 }

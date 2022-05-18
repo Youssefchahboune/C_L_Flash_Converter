@@ -36,11 +36,10 @@ public class Millimeter extends Length{
 
     /*
        Overridden method from ConvertLength interface that takes a Length object and converts MM to that unit object.
-       Returns a rounded number that has two decimal palaces.
      */
     @Override
     public double convert(Length unit) {
-        return Math.round((getMeasurement()*rates.get(unit.getLengthUnit()))*100.0)/100.0;
+        return getMeasurement()*rates.get(unit.getLengthUnit());
     }
 
 }

@@ -24,7 +24,7 @@ public class Kilometer extends Length{
         rates = new Hashtable<>();
         rates.put("KM",1.0);
         rates.put("M",1000.0);
-        rates.put("CM",10000.0);
+        rates.put("CM",100000.0);
         rates.put("MM",1000000.0);
     }
 
@@ -36,11 +36,10 @@ public class Kilometer extends Length{
 
     /*
        Overridden method from ConvertLength interface that takes a Length object and converts KM to that unit object.
-       Returns a rounded number that has two decimal palaces.
      */
     @Override
     public double convert(Length unit) {
-        return Math.round((getMeasurement()*rates.get(unit.getLengthUnit()))*100.0)/100.0;
+        return getMeasurement()*rates.get(unit.getLengthUnit());
     }
 
 }
