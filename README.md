@@ -1,13 +1,13 @@
 # Currency and Length Converter
 
-- Project’s Title (give your project a cool name! nothing boring!)
+## Project’s Title : Flash Converter
 
-- Project Description:
+## Project Description:
      What your application does.
      How it was built and what technologies you used.
      Some challenges that you faced and features you hope to implement in the future.
      
-- Design:
+## Design:
      Brief explanation behind the classes structure of the projects. Imagine writing this for
      someone that will continue development in your project.
      Class Diagram of your project (in UML)
