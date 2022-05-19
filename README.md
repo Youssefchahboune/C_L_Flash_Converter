@@ -16,9 +16,9 @@
 ## Design
 
    ### Brief explanation behind the classes structure of the projects :
-       ...
+   ...
        
-## Class Diagram of your project (in UML)
+## Class Diagram of my project (in UML)
 ![Screen Shot 2022-05-16 at 12 23 23 AM](https://user-images.githubusercontent.com/99833243/169211590-2e78a33b-a491-4530-8100-8a637d62a434.png)
    
 
