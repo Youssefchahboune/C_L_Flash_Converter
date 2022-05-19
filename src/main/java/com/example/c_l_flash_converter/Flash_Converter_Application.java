@@ -210,7 +210,7 @@ public class Flash_Converter_Application extends Application {
                     alert.showAndWait();
                 }
                 // if the input is not a number show error dialog
-                else if (!(lengthTopTextField.getText().matches("[0-9]+"))){
+                else if (!(lengthTopTextField.getText().matches("^\\d*(\\.\\d+)?$"))){
                     lengthTopTextField.clear();
                     Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setTitle("Error Dialog");
@@ -342,7 +342,7 @@ public class Flash_Converter_Application extends Application {
                 alert.showAndWait();
             }
             // if the input is not a number show error dialog
-            else if (!(currencyTopTextField.getText().matches("[0-9]+"))){
+            else if (!(currencyTopTextField.getText().matches("^\\d*(\\.\\d+)?$"))){
                 currencyTopTextField.clear();
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Error Dialog");
