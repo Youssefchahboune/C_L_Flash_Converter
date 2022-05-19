@@ -7,6 +7,8 @@
     -fx-text-fill : white;
 }
 
+/************************ Currency converter CSS ************************/
+
 #currency-title {
     -fx-font-size : 25px ;
     -fx-text-fill : white;
@@ -62,5 +64,53 @@
     -fx-background-radius: 0 0 9 9;
 }
 
+/************************ Length converter CSS ************************/
+
+#length-title {
+    -fx-font-size : 25px ;
+    -fx-text-fill : white;
+}
+
+#length-Top-TextField {
+    -fx-background-color: rgba(0, 255, 0, 0) ;
+    -fx-text-fill: white;
+    -fx-border-color: transparent transparent white transparent;
+    -fx-font-size : 25px ;
+}
+
+#length-Top-ComboBox {
+    -fx-background-color: rgba(255, 255, 255, 0.7) ;
+}
+
+#length-bottom-TextField {
+    -fx-background-color: rgba(0, 255, 0, 0) ;
+    -fx-text-fill: black;
+    -fx-border-color: transparent transparent black transparent;
+    -fx-font-size : 25px ;
+}
+
+#length-Bottom-ComboBox {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
+#top-length-converter {
+    -fx-background-color: linear-gradient(to bottom, black, gray);
+    -fx-border-radius: 9 9 0 0 ;
+    -fx-background-radius: 9 9 0 0;
+}
+
+.black-button {
+    -fx-background-color: linear-gradient(to bottom, black, gray);
+    -fx-text-fill : white;
+    -fx-font-size : 13px ;
+    -fx-background-radius : 30px;
+}
+
+
+#bottom-length-converter {
+    -fx-background-color: white;
+    -fx-border-radius: 0 0 9 9 ;
+    -fx-background-radius: 0 0 9 9;
+}
 
 
