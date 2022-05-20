@@ -27,7 +27,7 @@
    
    The classes are divided into two sections: a currency converter and a length converter, both of which have the identical implementation. There are ten    classes in all, two abstract classes, and two interfaces.
 
-   In the currency section, we can see that the abstract class Currency implements the ConvertCurrency interface, and that CAD, USD, YEN, and EURO are      all subclasses of Currency. There's also a class called CurrencyConverter, which takes a value and sets both currencies (the old and desired              currencies), then calls the appropriate converting method based on whatever currency was set as currency1 and converts it to the desired currency,        which in this case is currency2.
+   In the currency section, we can see that the abstract class Currency implements the ConvertCurrency interface, and that CAD, USD, YEN, and EURO are      all subclasses of Currency. There's also a class called CurrencyConverter, which takes a value and sets both currencies (the old and desired              currencies), then calls the appropriate convert method based on whatever currency was set as currency1 and converts it to the desired currency,        which in this case is currency2.
 
    Like I already said, both converter are implemented in the same way; the only difference is that instead of being currencies, they are units of          length.
 
