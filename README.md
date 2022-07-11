@@ -1,4 +1,6 @@
 # Currency and Length Converter
+For my final project in my Java 2 class, I chose to program and design a currency
+and length converter using Java and JavaFX. 
 
 ## Project’s Title
 
